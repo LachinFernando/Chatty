@@ -18,6 +18,7 @@ if not st.experimental_user.is_logged_in:
 else:
     if st.sidebar.button("Log out", type="secondary", icon=":material/logout:"):
         st.logout()
+        st.stop()
     # Display user name
     # chat app
     chatty()
